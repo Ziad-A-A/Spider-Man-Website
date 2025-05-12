@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    height: 100vh;
+}
+
+ul {
+    list-style:none ;
+}
+
+a {
+    text-decoration: none;
+}
+#navbar img {
+    width: 50px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 80px;
+}
+
+#navbar ul  li a {
+    padding: 10px 20px;
+    color: black;
+    font-weight: 600;
+}
+
+#navbar ul  li a:hover{
+    border-bottom: 2px solid red;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+.header .logo span {
+    font-size: 25px;
+    font-weight: bold;
+}
+.characters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.character {
+    position: relative;
+    width: 22%;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.character img {
+    width: 100%;
+    height: 674.267px;
+}
+.character .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+}
+.character .info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.character .info p {
+    margin: 5px 0 0;
+    font-size: 12px;
+}
+
+/* animaton */
+
+#navbar {
+    position: relative;
+    top: 50px;
+    animation: slide-top 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes slide-top{
+    0%{
+        top: 150px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+h1{
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fade-img .5s linear forwards;
+    animation-delay: 1.1s;
+}
+
+.container{
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fade-img .5s linear forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes fade-img{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.main {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(white,white, red);
+}    
+
+.main-M {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(white,white, green);
+}    
+
+.main .thumbnail {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.main-M .thumbnail {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.main .thumbnail img , .main-M .thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.main .details , .main-M .details{
+    width: 50%;
+}
+.main .details h1,.main-M .details h1 {
+    font-size: 60px;
+    margin: 0;
+}
+.main .details p ,.main-M .details p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.5;
+}
+.container-2 {
+    width: 100%;
+    background-image: linear-gradient(white,skyblue);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.container-3 {
+    width: 100%;
+    background-image: linear-gradient(white,#0d47a1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.content-2,.content-3 {
+    width: 50%;
+    padding: 20px;
+}
+.content-2 h1 ,.content-3 h1 {
+    font-size: 60px;
+    color: skyblue;
+    margin: 0 0 20px;
+}
+.content-2 p ,.content-3 p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.image-2,.image-3 {
+    width: 50%;
+    text-align: right;
+}
+.image-2 img , .image-3 img {
+    max-width: 100%;
+    height: auto;
+}
